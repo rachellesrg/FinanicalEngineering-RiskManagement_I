@@ -1,0 +1,163 @@
+Introduction to Derivative Securities
+Latest Submission Grade
+83.33%
+1.
+Question 1
+
+Term structure of interest rates and swap valuation
+
+Suppose the current term structure of interest rates, assuming annual compounding, is as follows:
+s1s_1s1​ 	s2s_2s2​ 	s3s_3s3​ 	s4s_4s4​ 	s5s_5s5​ 	s6s_6s6​
+7.0%	7.3%	7.7%	8.1%	8.4%	8.8%
+
+What is the discount rate d(0,4)d(0,4)d(0,4)? (Recall that interest rates are always quoted on an annual basis unless
+
+stated otherwise.)
+
+Please submit your answer rounded to three decimal places. So for example, if your answer is 0.45670.45670.4567 then you should submit an answer of 0.4570.4570.457.
+1 / 1 point
+0.732
+Correct
+
+The discount rate is given by the formula
+
+d(0,t)=1(1+st)t d(0,t) = \frac{1}{(1+s_t)^t} d(0,t)=(1+st​)t1​
+
+Using this formula we get 0.73230.73230.7323.
+2.
+Question 2
+
+Swap Rates
+
+Suppose a 6-year swap with a notional principal of $10 million is being
+
+configured. What is the fixed rate of interest that will make the value
+
+of the swap equal to zero. (You should use the term structure of interest rates from Question 1.)
+
+Please submit your answer as a percentage rounded to two decimal places. So for example, if your answer is 4.567%4.567\%4.567% or equivalently 0.045670.045670.04567, then you should submit an answer of 4.574.574.57.
+1 / 1 point
+8.62
+Correct
+
+The discount rates are:
+d(0,1)d(0,1)d(0,1) 	d(0,2)d(0,2)d(0,2) 	d(0,3)d(0,3)d(0,3) 	d(0,4)d(0,4)d(0,4) 	d(0,5)d(0,5)d(0,5) 	d(0,6)d(0,6)d(0,6)
+0.93460.93460.9346 	0.86860.86860.8686 	0.80050.80050.8005 	0.73230.73230.7323 	0.66810.66810.6681 	0.60290.60290.6029
+
+The value of the fixed interest rate, typically called the swap rate, is
+
+given by the formula
+
+r=1−d(0,6)∑t=16d(0,t)=0.0862=8.62% r = \frac{1-d(0,6)}{\sum_{t=1}^6 d(0,t)} = 0.0862 = 8.62\% r=∑t=16​d(0,t)1−d(0,6)​=0.0862=8.62%
+3.
+Question 3
+
+Hedging using futures
+
+Suppose a farmer is expecting that her crop of oranges will be ready for
+
+harvest and sale as 150,000150,000150,000 pounds of orange juice in 333
+
+months time. Suppose each orange juice futures contract is for 15,00015,00015,000
+
+pounds of orange juice, and the current futures price is F0=118.65F_0 = 118.65F0​=118.65 cents-per-pound.
+
+Assuming that the farmer has enough cash liquidity to fund
+
+any margin calls, what is the risk-free price that she can guarantee herself.
+
+Please submit your answer in cents-per-pound rounded to two decimal places. So for example, if your answer is 123.456123.456123.456, then you should submit an answer of 123.47123.47123.47.
+1 / 1 point
+118.65
+Correct
+
+She can go short 101010 futures contracts each for 15,00015,00015,000 pounds. This way
+
+she can ensure that the payoff from the futures contract would remove
+
+all the uncertainty in the spot price of orange juice, and she can lock
+
+the price to 118.65118.65118.65 cents-per-pound.
+4.
+Question 4
+
+Minimum variance hedge
+
+Suppose a farmer is expecting that her crop of grapefruit will be ready for
+
+harvest and sale as 150,000150,000150,000 pounds of grapefruit juice in 333
+
+months time. She would like to use futures to hedge her risk but unfortunately there
+
+are no futures contracts on grapefruit juice. Instead she will use orange juice futures.
+
+Suppose each orange juice futures contract is for 15,00015,00015,000
+
+pounds of orange juice and the current futures price is F0=118.65F_0 = 118.65F0​=118.65 cents-per-pound.
+
+The volatility, i.e. the standard deviation, of the prices of
+
+orange juice and grape fruit juice is 20%20\%20% and 25%25\%25%, respectively,
+
+and the correlation coefficient is 0.70.70.7. What is the approximate number
+
+of contracts she should purchase to minimize the variance of her payoff?
+
+Please submit your answer rounded to the nearest integer. So for example, if your calculations result in 10.78 contracts you should submit an answer of 11.
+1 / 1 point
+9
+Correct
+
+Suppose the farmer goes short hhh orange juice contracts. Then the
+
+payoff from the contract and the sale of the grape fruit juice would
+
+be C=150,000STG−15,000h(STO−FtO)C = 150,000 S^{G}_T - 15,000 h (S^O_T - F^O_t)C=150,000STG​−15,000h(STO​−FtO​) where STGS^G_TSTG​ and
+
+STOS^O_TSTO​ denote the price of grapefruit juice and orange juice at
+
+expiration, and FtOF^{O}_tFtO​ denotes the current price of orange juice
+
+futures.
+
+Using the formula in the module slides, the minimum-variance hedge
+
+is given by
+
+h∗=150,00015,000⋅cov(StG,StO)var(StG)=10⋅ρσGσO=10⋅(0.7)(0.25)0.20=8.75 h^\ast = \frac{150,000}{15,000} \cdot \frac{\mathbf{cov}(S^{G}_t, S^{O}_t)}{\mathbf{var}(S^{G}_t)} = 10 \cdot \frac{\rho \sigma_G}{\sigma_O} = 10 \cdot \frac{(0.7)(0.25)}{0.20} = 8.75 h∗=15,000150,000​⋅var(StG​)cov(StG​,StO​)​=10⋅σO​ρσG​​=10⋅0.20(0.7)(0.25)​=8.75
+
+Since the solution h∗h^\asth∗ has to be an integer, the number is
+
+either 888 or 999.
+5.
+Question 5
+
+Call Options
+
+Consider a 111-period binomial model with R=1.02R=1.02R=1.02, S0=100S_0 = 100S0​=100,
+
+u=1/d=1.05u=1/d= 1.05u=1/d=1.05. Compute the value of a European call option on the stock
+
+with strike K=102K=102K=102. The stock does not pay dividends.
+
+Please submit your answer rounded to two decimal places. So for example, if your answer is 3.45673.45673.4567 then you should submit an answer of 3.463.463.46.
+1 / 1 point
+2.04
+Correct
+
+The arbitrage-free value is C0=1RE0Q[C1]=1R[qCu+(1−q)Cd]C_0 = \frac{1}{R} E^{Q}_0[C_1] = \frac{1}{R} \left[q C_u + (1-q) C_d \right] C0​=R1​E0Q​[C1​]=R1​[qCu​+(1−q)Cd​] where q=R−du−dq = \frac{R-d}{u-d}q=u−dR−d​, 1−q=u−Ru−d1-q=\frac{u-R}{u-d}1−q=u−du−R​, Cu=3C_u = 3Cu​=3 and
+
+Cd=0C_d=0Cd​=0.
+
+Therefore C0=qCu/R=2.0373C_0 = qC_u/R = 2.0373C0​=qCu​/R=2.0373.
+6.
+Question 6
+
+Call Options II
+
+When you construct the replicating portfolio for the option in the previous question how many dollars do you need to invest in the cash account?
+
+Please submit your answer rounded to three decimal places. So for example, if your answer is −43.4567-43.4567−43.4567 then you should submit an answer of −43.457-43.457−43.457.
+0 / 1 point
+-27.94
+Incorrect
