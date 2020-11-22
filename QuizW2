@@ -1,0 +1,149 @@
+Introduction to Basic Fixed Income Securities
+Latest Submission Grade
+85.71%
+1.
+Question 1
+
+Lottery payments
+
+A major lottery advertises that it pays the winner $10 million. However this prize money is paid at the rate of $500,000 each year (with the first payment being immediate) for a total of 20 payments. What is the present value of this prize at 10% interest compounded annually?
+
+Report your answer in $millions, rounded to two decimal places. So, for example, if you compute the answer to be 5.7124 million dollars then you should submit an answer of 5.71.
+1 / 1 point
+4.68
+Correct
+
+The PV is given by
+
+PV=A∑i=0T−11(1+r)t=(A(1+r)r)(1−11+rT)=(500,000(1+0.1)0.1)(1−11.0120)=4.6825MPV = A\sum_{i=0}^{T-1} \frac{1}{{(1+r)}^t} = \left(\frac{A(1+r)}{r}\right)\left(1-\frac{1}{{1+r}^T}\right) = \left(\frac{500,000(1+0.1)}{0.1}\right)\left(1-\frac{1}{{1.01}^20}\right)=4.6825MPV=A∑i=0T−1​(1+r)t1​=(rA(1+r)​)(1−1+rT1​)=(0.1500,000(1+0.1)​)(1−1.01201​)=4.6825M
+2.
+Question 2
+
+Sunk Costs (Exercise 2.6 in Luenberger)
+
+A young couple has made a deposit of the first month's rent (equal to
+
+$1,000) on a 6-month apartment lease. The deposit is refundable at
+
+the end of six months if they stay until the end of the lease.
+
+The next day they find a different apartment that they like just as well,
+
+but its monthly rent is only $900. And they would again have to put a
+
+deposit of $900 refundable at the end of 6 months.
+
+They plan to be in the
+
+apartment only 6 months. Should they switch to the new apartment? Assume
+
+an (admittedly unrealistic!) interest rate of 12% per month compounded monthly.
+1 / 1 point
+
+Stay
+
+Switch
+Correct
+
+Compare the two alternatives: Stay in the original apartment, for an NPV, C1C_1C1​, given by
+
+C1 =− ∑i=0510001.12i + 10001.126 ≈ −4,222.C_1 \ = - \ \sum_{i=0}^5 \frac{1000}{1.12^i} \ + \ \frac{1000}{1.12^6} \ \approx \ - 4,222.C1​ =− ∑i=05​1.12i1000​ + 1.1261000​ ≈ −4,222.
+
+Take the new apartment where we assume a security deposit is again required. The NPV then is
+
+C2 = −900 − ∑i=059001.12i + 9001.126 ≈ −4700.C_2 \ = \ -900 \ - \ \sum_{i=0}^5 \frac{900}{1.12^i} \ + \ \frac{900}{1.12^6} \ \approx \ -4700.C2​ = −900 − ∑i=05​1.12i900​ + 1.126900​ ≈ −4700.
+
+The couple should take the $1000 apartment.
+3.
+Question 3
+
+Relation between spot and discount rates
+
+Suppose the spot rates for 1 and 2 years are s1=6.3%s_1 = 6.3\%s1​=6.3% and s2=6.9%s_2 = 6.9\%s2​=6.9% with annual compounding. Recall that in this course interest rates are always quoted on an annual basis unless otherwise specified. What is the discount rate d(0,2)d(0,2)d(0,2)?
+
+Please submit your answer rounded to three decimal places. So, for example, if your
+
+answer is 0:4567 then you should submit an answer of 0:457.
+1 / 1 point
+0.875
+Correct
+
+From the relation in the slides we get
+
+d(0,2)=1(1+s2)2=0.8751d(0,2)=\frac{1}{(1+s_2)^2}=0.8751d(0,2)=(1+s2​)21​=0.8751
+4.
+Question 4
+
+Relation between spot and forward rates
+
+Suppose the spot rates for 1 and 2 years are s1=6.3%s_1 = 6.3\%s1​=6.3% and s2=6.9%s_2 = 6.9\%s2​=6.9% with annual compounding. Recall that in this course interest rates are always quoted on an annual basis unless otherwise specified. What is the forward rate, f1,2f_{1,2}f1,2​ assuming annual compounding?
+
+Please submit your answer as a percentage rounded to one decimal place so, for example, if your answer is 8.789% then you should submit an answer of 8.8.
+1 / 1 point
+7.5
+Correct
+
+From the relation in the slides we get
+
+(1+s2)2=(1+s1)(1+f1,2)⇒f1,2=(1+s2)2(1+s1)−1=0.075=7.5%(1+s_2)^2=(1+s_1)(1+f_{1,2})\Rightarrow f_{1,2}=\frac{(1+s_2)^2}{(1+s_1)}-1=0.075=7.5\%(1+s2​)2=(1+s1​)(1+f1,2​)⇒f1,2​=(1+s1​)(1+s2​)2​−1=0.075=7.5%
+5.
+Question 5
+
+Forward contract on a stock
+
+The current price of a stock is $400 per share and it pays no dividends. Assuming a constant interest rate of 8% per year compounded quarterly, what is the stock's theoretical forward price for delivery in 9 months?
+
+Please submit your answer rounded to two decimal places so for example, if your answer is 567.1234 then you should submit an answer of 567.12
+1 / 1 point
+424.48
+Correct
+
+The discount factor is d(0,9)=1(1+r/4)3=11.023d(0,9)=\frac{1}{(1+r/4)^3}=\frac{1}{1.02^3}d(0,9)=(1+r/4)31​=1.0231​. Therefore, the forward price is
+
+F=S0/d(0,9)=400(1.02)3=424.4832F=S_0/d(0,9)=400(1.02)^3=424.4832F=S0​/d(0,9)=400(1.02)3=424.4832
+6.
+Question 6
+
+Bounds using different lending and borrowing rate
+
+Suppose the borrowing rate rB=10%r_B = 10\%rB​=10% compounded annually. However,
+
+the lending rate (or equivalently, the interest rate on deposits) is
+
+only 8%8\%8% compounded annually. Compute the difference between the upper
+
+and lower bounds on the price of an perpetuity that pays \(A = 10,000\\)$ per
+
+year.
+
+Please submit your answer rounded to the nearest dollar so if your answer is 23,456.78923,456.78923,456.789 then you should submit an answer of 234572345723457.
+1 / 1 point
+25000
+Correct
+
+The upper bound on the price of the annuity is ArL=100000.08=125,000\frac{A}{r_L} = \frac{10000}{0.08} = 125,000rL​A​=0.0810000​=125,000.
+
+The lower bound on the price of the
+
+annuity is ArB=100000.1=100,000\frac{A}{r_B} = \frac{10000}{0.1} = 100,000rB​A​=0.110000​=100,000.
+
+The difference
+
+is 25,00025,00025,000.
+7.
+Question 7
+
+Value of a Forward contract at an intermediate time
+
+Suppose we hold a forward contract on a stock with expiration 666
+
+months from now. We entered into this contract 666 months ago so that when we entered into the contract, the expiration was T=1T = 1T=1 year. The stock price$ 666 months ago was S0=100S_0 = 100S0​=100, the
+
+current stock price is 125125125 and the current interest rate is r=10%r = 10\%r=10%
+
+compounded semi-annually. (This is the same rate that prevailed 666 months ago.) What is the current value of our forward contract?
+
+Please submit your answer in dollars rounded to one decimal place so if your answer is 42.67842.67842.678 then you should submit an answer of 42.742.742.7.
+0 / 1 point
+22.72
+Incorrect
